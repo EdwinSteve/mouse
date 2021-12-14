@@ -1,19 +1,29 @@
-area_de_dibujo.addEventListener("mouseup", parar_dibujo);
 area_de_dibujo.addEventListener("mousedown", iniciar_dibujo);
 area_de_dibujo.addEventListener("mousemove", mover_dibujo);
-var color = document.getElementById("colorcito");
-var ancho = document.getElementById("ancho_li");
+area_de_dibujo.addEventListener("mouseup", parar_dibujo);
 var cuadrito = document.getElementById("area_de_dibujo");
 var lienzo = cuadrito.getContext("2d");
 var estado = 0;
+var color = "black";
+var ancho = "3";
 var y;
 var x;
+
+function color(c)
+{
+    color = c;
+}
+
+function ancho(g)
+{
+    ancho = g;
+}
 
 function dibujarLinea(color, x_inicial, y_inicial, x_final, y_final, lienzo)
 {
     lienzo.beginPath();
     lienzo.strokeStyle = color;
-    lienzo.lineWidth = 3;
+    lienzo.lineWidth = ancho;
     lienzo.moveTo(x_inicial, y_inicial);
     lienzo.lineTo(x_final, y_final);
     lienzo.stroke();
@@ -49,8 +59,8 @@ function parar_dibujo()
 
 }
 
-dibujarLinea("red", 0, 0, 300, 0, lienzo);
-dibujarLinea("red", 300, 0, 300, 300, lienzo);
-dibujarLinea("red", 300, 300, 0, 300, lienzo);
-dibujarLinea("red", 0, 300, 0, 0, lienzo);
-dibujarLinea("red", x, y, x, y, lienzo);
+dibujarLinea(color, 0, 0, 300, 0, lienzo);
+dibujarLinea(color, 300, 0, 300, 300, lienzo);
+dibujarLinea(color, 300, 300, 0, 300, lienzo);
+dibujarLinea(color, 0, 300, 0, 0, lienzo);
+dibujarLinea(color, x, y, x, y, lienzo);
