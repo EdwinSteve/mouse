@@ -4,4 +4,4 @@ la finalidad de este proyecto es crear una pizarra interactiva con un canvas tip
 **¿Cual es mi problema?**
 El problema que tengo es con los input color e input range. Pues no me detecta el valor que la persona puso en estos.
 
-###Steve ツ
+### Steve ツ
