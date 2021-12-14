@@ -11,10 +11,10 @@
     <p>usa el cursor para dibujar</p>
     <p>                                   </p>
     <p>Porfavor selecciona el color de tu preferencia:</p>
-    <input type="color" value="#ff0000" id ="colorcito"/>
+    <input type="color" value="#ff0000" id ="colorcito" oninput="color(this.value)"/>
     <p>                                           </p>
     <p>porfavor elige el ancho de tu trazo:</p>
-    <input type="number" value="3" id ="ancho_li"/>
+    <input type="range" value = "3" id ="ancho_li" oninput="ancho_li(this.value);" min="1" max="7" />
 </body>
     <script src="mouse.js"></script>
 </html>
