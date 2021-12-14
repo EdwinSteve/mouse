@@ -63,4 +63,3 @@ dibujarLinea(color, 0, 0, 300, 0, lienzo);
 dibujarLinea(color, 300, 0, 300, 300, lienzo);
 dibujarLinea(color, 300, 300, 0, 300, lienzo);
 dibujarLinea(color, 0, 300, 0, 0, lienzo);
-dibujarLinea(color, x, y, x, y, lienzo);
